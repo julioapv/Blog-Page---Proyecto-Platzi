@@ -1,0 +1,118 @@
+/* Estilos raíz */
+body {
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    font-family: 'Roboto mono', monospace;
+}
+
+a {
+    text-decoration: none;
+    display: inline;
+    color: black;
+}
+
+header {
+    width: 100%;
+    height: 140px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.icons_container {
+    width: 100%;
+    height: 50px;
+    display: grid;
+    background-color: #006E90;
+}
+
+.icons_container .icons {
+    width: 300px;
+    height: auto;
+    display: flex;
+    justify-items: flex-end;
+    align-items: center;
+    justify-content: space-between;
+    justify-self: end;
+    margin-right: 50px;
+}
+
+header .icons span {
+    color: #FBFFFB;
+}
+
+nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 90px;
+}
+
+nav .nav__logo_container {
+    margin-left: 50px;
+}
+
+nav .nav__logo_container img {
+    width: 220px;
+    margin-top: 10px;
+}
+
+nav .nav__profile_container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 50px;
+}
+
+nav .nav__profile_container a {
+    font-size: 1.5rem;
+    border-bottom: 1px solid black;
+}
+
+.home_main {
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    height: 100%;
+    background-image: url('https://images.unsplash.com/photo-1483478550801-ceba5fe50e8e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80s');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.home_main section {
+    display: grid;
+    grid-column: 2;
+    justify-items: center;
+    height: 350px;
+    margin-top: 80px;
+}
+
+.home__main_text {
+    font-family: 'Roboto mono', monospace;
+    font-size: 3rem;
+    font-weight: 700;
+    letter-spacing: 10px;
+    text-align: center;
+    color: white;
+    text-shadow: 5px 1px 10px rgb(57, 57, 57);
+}
+
+.home__main_button {
+    margin-top: 100px;
+    font-size: 1.5rem;
+    background-color: #48ceac;
+    color: whitesmoke;
+    padding: 10px;
+    padding-top: 15px;
+    border: 1px solid white;
+    border-radius:10px;
+    font-weight: bold;
+}
+
+.home__main_button:hover {
+    background-color: #5fd2b5;
+    transform: scale(1.1);
+}
