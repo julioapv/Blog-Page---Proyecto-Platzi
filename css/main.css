@@ -2,12 +2,21 @@
 body {
     margin: 0;
     padding: 0;
+    font-family: 'Roboto mono', monospace;
+}
+
+.home_body {
     position: fixed;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
-    font-family: 'Roboto mono', monospace;
+}
+
+.grid_container {
+    max-width: 980px;
+    margin: auto;
+    text-align: center;
 }
 
 a {
@@ -103,16 +112,121 @@ nav .nav__profile_container a {
 .home__main_button {
     margin-top: 100px;
     font-size: 1.5rem;
-    background-color: #48ceac;
-    color: whitesmoke;
+    background-color: white;
+    color: black;
     padding: 10px;
-    padding-top: 15px;
-    border: 1px solid white;
+    padding-top: 10px 15px;
+    border: 1px solid #48CFAD;
     border-radius:10px;
     font-weight: bold;
+    transition: all 0.5s ease-out;
 }
 
 .home__main_button:hover {
-    background-color: #5fd2b5;
-    transform: scale(1.1);
+	border: 1px solid white;
+	color: white;
+	background-color: #48CFAD;
+}
+
+/* Blogs-page */
+
+.blogs_main {
+    display: grid;
+}
+
+.blogs_news_container {
+    background-color: #e6e9ed;
+    padding: 0 50px 40px;
+}
+
+.blogs__main_featured {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 2fr;
+}
+
+.blogs__main_featured h3 {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+    margin-left: 40px;
+}
+
+.blogs__featured_img_container {
+    grid-column: 1;
+}
+
+.blogs__featured_img_container img {
+    width: 85%;
+}
+
+.blogs__featured_img_container figcaption {
+    margin-top: 15px;
+    margin-left: 15px;
+    font-size: 1.2rem;
+    font-weight: 200;
+    font-style: italic;
+}
+
+.blogs_featured__info_container {
+    grid-column: 2;
+}
+
+.blogs_featured__info_container p {
+    margin-bottom: 35px;
+}
+
+.blogs__posts_container {
+    padding: 0 50px 40px;
+}
+
+.blogs__posts_container h3 {
+    text-align: center;
+}
+
+.blogs_button {
+    border: 1px solid #47cfac;
+    padding: 10px 15px;
+    font-size: 1.2rem;
+    transition: all 0.5s ease-out;
+}
+
+.blogs_button:hover {
+	border: 1px solid white;
+	color: white;
+	background-color: #48CFAD;
+}
+
+.blogs__posts_container {
+    padding: 0 50px 40px;
+    text-align: center;
+}
+
+.blogs__posts_container .post_container {
+    display: inline-block;
+    padding-left: 10px;
+    max-width: 30%;
+    margin-bottom: 50px;
+    text-align: left;
+    
+}
+
+.blogs__posts_container .post_container p {
+    margin-bottom: 35px;
+}
+
+.blogs__posts_container .post_container img {
+    width: 100%;
+}
+
+footer {
+    width: 100%;
+    height: 80px;
+    background-color: #22272d;
+    border-top: 40px solid #006E90;
+    text-align: center;
+}
+
+footer p {
+    color: white;
+    margin-top: 30px;
 }
