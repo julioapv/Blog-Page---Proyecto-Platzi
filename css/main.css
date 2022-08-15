@@ -230,3 +230,130 @@ footer p {
     color: white;
     margin-top: 30px;
 }
+
+/* Página de Blog */
+
+.blogpost-main__img-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.blogpost-main__img-container img {
+    width: 1000px;
+}
+
+.blogpost-main__img-container figcaption {
+    margin-top: 10px;
+    text-align: right;
+    font-size: 1.2rem;
+    font-style: italic;
+}
+
+.blogpost-main__info-container h3 {
+    text-align: left;
+    margin-left: 20px;
+    font-size: 1.6rem;
+}
+
+.blogpost-main__info-container article h1 {
+    font-size: 3rem;
+    margin-bottom: 30px;
+}
+
+.blogpost-main__info-container p {
+    font-size: 1.4rem;
+    line-height: 28px;
+    text-align: justify;
+    text-justify: auto;
+    text-indent: 20px;
+}
+
+.contact-main-container {
+    width: 100%;
+    background-color: #e6e9ed;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+.contact-main-container div {
+    display: inline-block;
+    width: 49.5%;
+    height: 100%;
+    padding-top: 10px;
+}
+
+.contact-main-container div a {
+    border-bottom: 1px solid black;
+    padding-bottom: 5px;
+}
+
+.contact-main-container div p {
+    font-size: 1rem;
+    text-indent: 0%;
+}
+
+.contact-main-container .contact-left, .contact-right {
+    text-align: initial;
+    margin-top: 85px;
+}
+
+.contact-main-container img {
+    width: 100px;
+}
+
+/* Página de perfil */
+
+.profile-main__container {
+    background-color: #e6e9ed;
+    padding: 70px 150px;
+    margin-bottom: 50px;
+    display: flex;
+}
+
+.profile-main__container img {
+    width: 320px;
+    margin-right: 30px;
+}
+
+.profile-main__container p {
+    text-align: justify;
+    line-height: 25px;
+}
+
+.profile-main__projects {
+    padding: 0 50px 40px;
+}
+
+.profile-main__projects h3 {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.projects-main__container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.project-container {
+    background-color: rgb(169, 205, 255);
+    border-radius: 8px;
+    min-height: 200px;
+    padding: 20px 15px;
+    margin-top: 20px;
+}
+
+.project-container img {
+    width: 250px;
+}
+
+.project-container h4 {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.project-container p {
+    text-align: justify;
+}
+
