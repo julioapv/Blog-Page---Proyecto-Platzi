@@ -1,0 +1,32 @@
+@media (max-width: 900px) {
+    /* Blogs */
+    .blogs__main_featured {
+        grid-template-columns: 1fr;
+        grid-template-rows: 3fr;
+    }
+    .blogs__featured_img_container {
+        grid-row: 2;
+    }
+    .blogs_featured__info_container {
+        grid-column: 1;
+        grid-row: 3;
+    }
+    .blogs__posts_container .post_container {
+        max-width: 45%;
+    }
+
+    /* Perfil */
+    .projects-main__container {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 2fr;
+    }
+    .profile-main__container {
+        display: block;
+    }
+}
+
+@media (max-width: 600px) {
+    .blogs__posts_container .post_container {
+        max-width: 95%;
+    }
+}
